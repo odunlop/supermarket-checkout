@@ -24,5 +24,4 @@ describe Shopping_Basket do
       expect(subject.total_price).to eq 4
     end
   end
-
 end
