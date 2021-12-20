@@ -1,7 +1,7 @@
-require 'item'
+require 'shopping_basket'
 
-describe Item do
+describe Shopping_Basket do
   it 'tells a user how much an item costs' do
-    expect(subject).to respond_to(:check_price).with(1).argument
+    expect(subject.check_price("bread")).to eq 3
   end
 end
