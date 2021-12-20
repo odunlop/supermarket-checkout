@@ -7,7 +7,6 @@ class Shopping_Basket
       "cheese" => 4,
       "bubbly" => 20
   }.freeze
-  
     @items = []
   end
 
@@ -17,7 +16,11 @@ class Shopping_Basket
 
   def scan(item)
     @items << item
-    @items
   end 
 
+  def total_price
+    total = 0
+    @items.each { | item | total += @price_list[item] }
+    total
+  end
 end

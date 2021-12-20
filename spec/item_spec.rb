@@ -16,4 +16,13 @@ describe Shopping_Basket do
       expect(subject.scan("bubbly")).to match_array(["bread", "milk", "bubbly"])
     end
   end
+
+  describe '#total_price' do
+    it 'allows the user to see the total price of the scanned items' do
+      subject.scan("bread")
+      subject.scan("milk")
+      expect(subject.total_price).to eq 4
+    end
+  end
+
 end

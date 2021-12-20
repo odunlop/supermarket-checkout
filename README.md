@@ -1,6 +1,7 @@
 # Super Market Checkout
 
 ## Introduction
+This exercise was completed as part of my Week 3 training on TTD
 
 ## User Stories
 ```
