@@ -49,7 +49,7 @@ $ irb
 As you scan more items, these items will be remembered and the list will be fed back to you every time a new item is scanned.
 
  ### See the total price of all scanned items
- You can see the total of all the scanned items so far by running the `.
+ You can see the total of all the scanned items so far by running the `.total_price` method.
  ```
  $ irb
  3.0.0 :006 > basket.total_price
