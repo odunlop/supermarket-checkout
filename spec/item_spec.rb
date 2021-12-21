@@ -18,10 +18,10 @@ describe Shopping_Basket do
   end
 
   describe '#total_price' do
-    it 'allows the user to see the total price of the scanned items' do
+    it 'allows the user to see the total price of the scanned items in the format £xx.xx' do
       subject.scan("bread")
       subject.scan("milk")
-      expect(subject.total_price).to eq 4
+      expect(subject.total_price).to eq "£4.00"
     end
   end
 end

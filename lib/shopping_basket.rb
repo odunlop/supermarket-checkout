@@ -1,3 +1,5 @@
+require_relative 'my_money'
+
 class Shopping_Basket
 
   def initialize 
