@@ -10,10 +10,11 @@ class Shopping_Basket
       "bubbly" => 20
   }.freeze
     @items = []
+    @into_sterling = MyMoney.new
   end
 
   def check_price(item)
-    @price_list[item.downcase]
+    @into_sterling.convert(@price_list[item.downcase])
   end
 
   def scan(item)
@@ -23,6 +24,6 @@ class Shopping_Basket
   def total_price
     total = 0
     @items.each { | item | total += @price_list[item] }
-    total
+    @into_sterling.convert(total)
   end
 end
